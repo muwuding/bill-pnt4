@@ -23,25 +23,6 @@ module.exports = function(grunt) {
       }
     },
 
-    // 编译jade
-    jade: {
-      layouts: {
-        options: {
-            client: false,
-            pretty: true
-        },
-        files: [
-          {
-            expand: true,
-            cwd: 'views/layouts',
-            src: ['**/*.jade', '!**/common/*.jade'],
-            dest: 'dist/views',
-            ext: '.html'
-          }
-        ]
-      }
-    },
-
     // 编译less
     less: {
       dist: {
@@ -142,7 +123,7 @@ module.exports = function(grunt) {
       },
       server: {
         options: {
-          open: true, //自动打开网页 http://
+          open: false, //自动打开网页 http://
           base: [
             'dist'  //主目录
           ]
@@ -155,7 +136,7 @@ module.exports = function(grunt) {
       options: {
         dateFormat: function(time) {
           grunt.log.writeln('此次监听共历时' + time + '毫秒');
-          grunt.log.writeln('程序尚未退出，还在等着监听你的其他操作哟，小婊砸~');
+          grunt.log.writeln('程序尚未退出，还在等着监听你的其他操作哟~');
         }
       },
       less: {
@@ -196,5 +177,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // 默认的Grunt任务
-  grunt.registerTask('default', ['clean:dist', 'jade', 'less', 'uglify','copy', 'connect', 'watch']);
+  grunt.registerTask('default', ['clean:dist', 'less', 'uglify','copy', 'connect', 'watch']);
 };
