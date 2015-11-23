@@ -1,1 +1,35 @@
-function fullpageShow(o,l,g){var i={bgColors:o,tooltips:l};g.fullpage({navigation:!0,navigationTooltips:i.tooltips,easing:"linear",sectionsColor:i.bgColors})}$(function(){var o={bgColors:["rgb(240,72,71)","rgb(250,200,139)","rgb(253,255,190)","rgb(151,255,248)","rgb(109,253,156)"],tooltips:["电商仓储配送系统","系统集成服务总线","流程管控，灵活可配","多组织多架构权限管理模型","基于互联网，B/S和C/S混合模式"]};fullpageShow(o.bgColors,o.tooltips,$("#fullpage"))});
+function getUrlParam(name) {
+    var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)'),
+        r = window.location.search.substr(1).match(reg);
+
+    if(r != null) return unescape(r[2]); return null;
+}
+
+function fullpageShow(o, l, g) {
+    var i = {
+        bgColors: o,
+        tooltips: l
+    };
+    g.fullpage({
+        navigation: !0,
+        navigationTooltips: i.tooltips,
+        easing: "linear",
+        sectionsColor: i.bgColors
+    })
+
+    var n = parseInt(getUrlParam("map"));
+    var len = $("#fullpage .section").length;
+
+    if(n > 0 && n <= len){
+        $.fn.fullpage.moveTo(n,0);
+    }
+}
+$(function () {
+    var o = {
+        bgColors: ["rgb(240,72,72)", "rgb(230,199,153)", "rgb(251,199,139)", "rgb(253,255,190)", "rgb(152,255,249)",
+                   "rgb(109,253,156)", "rgb(161,206,239)", "rgb(223,178,217)", "rgb(240,173,157)", "rgb(210,210,210)"],
+        tooltips: ["物流运营管理系统","物流运营管理系统总览", "业务委托管理系统", "物流计划管理系统", "公路运输管理系统", "仓库管理系统",
+                   "海空铁运输管理系统","关务管理系统","车务管理系统","计费与结算管理系统"]
+    };
+    fullpageShow(o.bgColors, o.tooltips, $("#fullpage"))
+});

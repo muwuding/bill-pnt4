@@ -58,6 +58,9 @@ img {
 
 
 /*头部导航*/
+.container {
+	width: 1200px;
+}
 .outer-wrapper-all {
 	position: relative;
 	width: @fix-width;
@@ -116,7 +119,7 @@ img {
 		background-color: @bg-subnav;
 		box-shadow: 0 5px 5px #999;
 		/* 登录框.form-control的z-index值为2*/
-		z-index: 3;
+		z-index: 9999;
 		height: 0;
 		overflow: hidden;
 		/* visibility: hidden;
@@ -384,11 +387,14 @@ img {
 }
 /*底部*/
 .footer {
-	color: #fff;
-	background-color: @bg-footer;
+	padding: 0;
+	min-width: 1200px;
+	height: 120px;
+	line-height: 120px;
+	background: #f9f9f9;
+	color: #777;
+	border-top: 1px solid #eee;
 	
-	padding: 10px 0;
-	font-size: 0.85 * @base-fontsize;
 	a {
 		color: inherit;
 	}

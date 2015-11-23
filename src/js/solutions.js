@@ -1,81 +1,79 @@
-/*产品切换动画*/
-function productSwiper() {
-    var box = $("#productBox");
-    var items = box.find(".pnt-container-cell");
-    var i = {};
 
-    /*盒子宽度*/
-    box.width(items.length*390+(items.length-1)*15);
 
-    /*切换显示规则*/
-    if(items.length > 3){
-        $("#J_swiper_page").show();
+var solutions = {
+
+  //调整页面margin
+  adjustWrapMargin: function() {
+
+    if($(window).width() > 1200){
+      $("#wrap").css("padding-left",($(window).width()-1200)/2+260);
+      $("body").show();
     }else{
-        $("#J_swiper_page").hide();
+      $("#wrap").css("padding-left",260);
+      $("body").show();
     }
+  },
 
-    /*底部圆点动画*/
-    $("#J_swiper_page").on("click", "li", function () {
+  //点击tabs滚动到对应位置
+  clickTabsEasing : function() {
 
-        if(3 * parseInt($(this).attr("num")) < items.length - 3){
-            var num = parseInt($(this).attr("num"));
-            box.animate({
-                left: "-" + num * (items.outerWidth() + 15) * 3 - (num > 0 ? 15 : 0) + "px"
-            }, 500)
-        }else {
-            box.animate({
-                left: "-" + (items.length - 3) * (15 + items.outerWidth()) + "px"
-            }, 500);
-        }
-    
-        $(this).addClass("action").siblings().removeClass("action")
+    var $dom = $("html, body");
+    var $links = $("#tabs a");
+    var href;
+
+    $links.bind("click",function() {
+      href = $(this).attr("href");
+      $dom.animate({
+        scrollTop: $(href).offset().top
+      },{duration:800,easing:'easeOutExpo'}, function () {
+        window.location.hash = href;
+      });
+      return false;
     });
+  },
 
-    /*增加圆点*/
-    for (var j = 0, k = ""; j < Math.ceil(items.length / 3);){
-        k += 0 == j ? '<li class="action" num="' + j + '"></li>' :'<li num="' + j + '"></li>', j++;
-    } 
+  //左侧菜单
+  clickMenu: function(){
 
-    $("#J_swiper_page").html(k);
+    var lists = $("#menu .wrap-list");
+    var boxs = $(".list-box");
+    lists.on("click",".list-title",function(){
 
-    box.on('mouseenter',function () {
+      if($(this).attr("status") == "on"){
+        return;
+      };
 
-        clearTimeout(i);
-        var a = parseInt($("#J_swiper_page>li.action").attr("num")),
-            b = items.length;
-
-        return 3 >= b ? void 0 : ($("#J_swiper_prev,#J_swiper_next").show(), 0 == a ? $("#J_swiper_prev").hide() : a ==
-            Math.ceil(b / 3) - 1 ? $("#J_swiper_next").hide() : void 0)
-    }).on('mouseleave',function () {
-        i = setTimeout(function () {
-            $("#J_swiper_prev,#J_swiper_next").hide()
-        }, 100)
+      $(".list-title").removeClass("current");
+      $(this).addClass("current");
+      boxs.hide();
+      $(this).next(".list-box").show();
     });
+  },
 
-    $("#J_swiper_next,#J_swiper_prev").on('mouseenter',function () {
-        clearTimeout(i)
-    }).on('click',function () {
-        "J_swiper_prev" == $(this).attr("id") ? $("#J_swiper_page>li.action").prev().click() : "J_swiper_next" == $(
-            this).attr("id") && $("#J_swiper_page>li.action").next().click();
-        var a = parseInt($("#J_swiper_page>li.action").attr("num")),
-            b = items.length;
-        return 3 >= b ? void 0 : ($("#J_swiper_prev,#J_swiper_next").show(), 0 == a ? $("#J_swiper_prev").hide() : a ==
-            Math.ceil(b / 3) - 1 ? $("#J_swiper_next").hide() : void 0)
-    });
-}
+  //tabs定位
+  tabsPosition: function() {
+    var top = $("#tabs").offset().top;
+    var scrollTop = $(window).scrollTop();
 
-$(window).on("load", function () {
-    $(".flexslider").flexslider({
-        directionNav: !1,
-        animation: "slide",
-        start: function () {
-            $("body").addClass("loaded"), $(".footer").css("visibility", "visible"), $(".flexslider").find("img").each(function () {
-                var i = $(this),
-                    s = i.data("src");
-                s && (this.src = s)
-            })
-        }
-    });
+    console.log(top + "," + scrollTop);
 
-    productSwiper();
+    if(scrollTop >= 557){
+      $("#tabs").css("position","fixed");
+    }else{
+      $("#tabs").css("position","static");
+    }
+  }
+};
+
+$(document).ready(function(){
+
+  solutions.adjustWrapMargin();
+  solutions.clickTabsEasing();
+  solutions.clickMenu();
+  solutions.tabsPosition();
+
 });
+
+$(window).resize(solutions.adjustWrapMargin);
+
+$(window).scroll(solutions.tabsPosition);
