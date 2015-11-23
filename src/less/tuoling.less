@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* 参数 */
+@import url('common/variable.less');
+/* 混合 */
+@import url('mixin/widget.less');
+
+@imgURL: '../images';
+
+html {
+	height: 100%;
+	background: url("@{imgURL}/tuoling_bg.jpg") rgb(47,49,61); 
+}
+body {
+	height: 100%;
+	background-color: rgba(30,30,30,0.6); 
+	overflow-y: hidden;
+	position: relative;
+}
+header,nav {
+	padding-right: 35px;
+}
+.eco-system-container {
+	background: url("@{imgURL}/tuoling_eco.png") center no-repeat;
+	height: 100%;
+	margin-top: -70px;
+}
+.footer {
+	border: none;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+} 

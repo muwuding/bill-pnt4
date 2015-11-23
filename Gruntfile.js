@@ -52,7 +52,12 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: 'src/js',
-            src: ['app/**/*.js'],
+            src: ['**/*.js',
+                  '!bootstrap/**/*.js',
+                  '!flexslider/**/*.js',
+                  '!fullPage/**/*.js',
+                  '!jquery/**/*.js',
+                  '!jquery-ui/**/*.js'],
             dest: 'dist/js',
             ext: '.min.js'
           }
@@ -97,7 +102,11 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: 'src/js',
-            src: ['**/*','!app/**/*'],
+            src: ['bootstrap/**/*',
+                  'flexslider/**/*',
+                  'fullPage/**/*',
+                  'jquery/**/*',
+                  'jquery-ui/**/*'],
             dest: 'dist/js'
           }
         ]
@@ -109,6 +118,16 @@ module.exports = function(grunt) {
             cwd: 'src',
             src: ['**/*.html'],
             dest: 'dist'
+          }
+        ]
+      },
+      download: {
+        files: [
+          {
+            expand: true,
+            cwd: 'src/download',
+            src: ['**/*'],
+            dest: 'dist/download'
           }
         ]
       }
@@ -167,13 +186,11 @@ module.exports = function(grunt) {
   });
 
   // 加载Grunt插件
-  grunt.loadNpmTasks('grunt-contrib-jade');
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-cachebuster');//版本号管理
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // 默认的Grunt任务

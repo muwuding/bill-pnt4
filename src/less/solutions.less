@@ -1,0 +1,147 @@
+@charset "utf-8";
+@import url('common/variable.less');
+
+body {
+	background: #f4f4f4;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin: 0 !important;
+}
+
+/*框架主体*/
+.solutions-wrap {
+	margin: 0 auto;
+	width: 100%;
+	padding-left: 260px;
+}
+.sol-wrap-left {
+	float: left;
+	margin-left: -260px;
+	width:260px;
+}
+
+.sol-wrap-main {
+	float: left;
+	width: 100%;
+	background-color: #fff;
+
+	.wrap-right {
+		width: 940px;
+	}
+}
+
+/*menu*/
+.wrap_menu {
+	width:100%; 
+	background:#f9f9f9;
+}
+.wrap_list .list-title {
+	position:relative;
+	*position:none;/*ie7*/
+	_position:none;/*ie6*/
+	width:100%;
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+	font-weight:700;
+	color:#7d7d7d;
+	background: url(../images/icon_down.jpg) no-repeat 90% center;
+	cursor:pointer;
+
+	&.current,&:hover {
+		background-color: #eaeaea;
+		border-top:1px solid #d7d7d7;
+		color: #22a5e9;
+	}
+}
+.wrap_list  .list-title h4 {
+	display:inline-block;
+	line-height:35px;
+	padding-left:39px;
+	background:url(../images/dh4_h4_bg.png) no-repeat 22px center;
+}
+.wrap_list   i { 
+	position:absolute;
+	left:12px; 
+	top:10px;  
+	width:16px; 
+	height:14px;  
+	vertical-align:middle;
+	
+	/*ie7对position:relative不支持*/
+	*position:none;
+	*float:left;
+	*margin-left:12px;
+	*margin-top:12px;
+}
+.wrap_list   i.category{ 
+	background:url(../images/icon_category.jpg) no-repeat 0 0;  
+}
+.wrap_list   i.data{ 
+	background:url(../images/icon_data.jpg) no-repeat 0 0;  
+}
+.wrap_list   i.set{ 
+	background:url(../images/icon_set.jpg) no-repeat 0 0;  
+}
+.wrap_list  > .list-box {
+	display:none;
+	padding:10px 5px;
+	background:#f0f0f0;
+}
+.wrap_list  > .list-box a {
+	display:block;
+	padding:10px 5px;
+}
+
+/* main */
+.main-banner {
+	height: 420px;
+	background-color: #effbfb;
+}
+
+.main-tabs {
+	margin-top: 45px;
+	padding-left:68px;
+
+	li {
+		float: left;
+		height: 36px;
+		line-height: 36px;
+		width: 16.66666%;
+		text-align: center;
+		border-bottom: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		cursor: pointer;
+
+		&.current {
+			color: #00a0e8;
+			border-bottom-color: #00a0e8;
+		}
+	}
+}
+
+.content-section {
+	padding: 40px 0 20px 68px;
+
+	.section-title {
+		height: 11px;
+		border-bottom: 1px solid #ccc;
+
+		h1 {
+			float: left;
+			padding-right: 10px;
+			height: 22px;
+			font-size: 16px;
+			background-color: #fff;
+
+			i {
+			display: inline-block;
+			margin-right: 10px
+			width: 12px;
+			height: 12px;
+			border-radius: 6px;
+			border: 1px solid #ccc;
+		}
+		}
+	}
+}

@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="zh-CN" id="tuoling_root">
+<html lang="zh-CN">
 <head>
 	<meta charset="UTF-8">
-	<title>驼铃云-4PNT四方网络科技</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+	<title>4PNT四方网络科技|公司简介</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta name="renderer" content="ie-stand">
-	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css?ver=20151120">
-	<link rel="stylesheet" href="css/base.css?ver=20151120">
-	<link rel="stylesheet" href="css/tuoling.css?ver=20151120">
-	<script type="text/javascript" src="js/nav.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/flexslider/flexslider.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/service.css">
+	<link rel="stylesheet" href="css/aboutus.css">
+	<!-- <link rel="stylesheet" href="css/i-timeline.css"> -->
 	<!-- Respond.js for IE8 support of media queries -->
-<!--[if lt IE 9]>
-  	<link rel="stylesheet" href="css/ie8.css">
-	<script src="js/bootstrap/respond.min.js"></script>
-<![endif]-->
+	<!--[if lt IE 9]>
+	  	<link rel="stylesheet" href="css/ie8.css">
+		<script src="js/bootstrap/respond.min.js"></script>
+	<![endif]-->
 </head>
 <body>
 	<div class="text-right top-header">
@@ -35,7 +37,7 @@
 <div class="header-nav">
 	<div class="container">
 		<ul>
-			<!-- <li class="website-logo">
+			<li class="website-logo">
 				<a href="index.html">
 					<img src="images/common_logo.png" alt="4PNT">
 				</a>
@@ -186,13 +188,55 @@
 			</li>
 			<li>
 				<a href="about.html" class="nav-title">关于我们</a>
-			</li>  -->
-			<script type="text/javascript">createNav('./')</script>
+			</li> 
 		</ul>
 	</div>
 </div>
-	<div class="eco-system-container">
+	<div class="content-wrapper clearfix">
+		<img src="images/aboutus_bg.jpg" alt="">
+		<div class="container">
+			<div class="left-menu-section">
+				<ul>
+					<li class="active">
+						<a href="#">
+							<span class="iconfont icon-weihu"></span>
+							公司概况
+						</a>
+					</li>
+					<li>
+						<a href="development.history.html">
+							<span class="iconfont icon-weihu"></span>
+							发展历程
+						</a>
+					</li>
+					<li>
+						<a href="cultrue.html">
+							<span class="iconfont icon-wodefuwu"></span>
+							公司文化
+						</a>
+					</li>
+					<li>
+						<a href="aboutus.html">
+							<span class="iconfont icon-kefu"></span>
+							联系我们
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="main-content company-about-content">
+				<h2 class="content-title">公司概况</h2>
+				<div>
+					<p>
+						 深圳市前海四方网络科技（简称为四方网络科技，即4PNT）有限公司是国内领先的专注电子商务与物流领域的信息化及运营整合服务提供商，为客户提供IT解决方案、IT运维、驼铃云（SAAS），以及电商与物流运营资源整合等综合服务。公司一直致力于基于互联网、移动互联网、物联网等新一代信息技术与通信技术，并运用先进的管理思想，提供互联网基因的产品与服务，帮助客户进行商业模式与运营模式创新，推动企业管理变革与流程优化，提升企业竞争力与实现利润最大化。
+					</p>
+					<p>
+						四方网络科技是深圳递四方科技集团（4PX）的成员企业，4PX公司的业务包括软件、电子商务、跨境物流等业务，是国内跨境电商物流领域的领导企业与引领业界的一站式跨境电商解决方案提供商之一。
+					</p>
+				</div>
+			</div>
+		</div>
 	</div>
+
 	<div class="sidemenu-container">
 	<div class="sidemenu-contact">
 		<span class="iconfont icon-kefubu"></span>
@@ -245,5 +289,17 @@
 	// iPAD下CSS的hover属性兼容处理
 	document.addEventListener && document.addEventListener('touchstart',function(){},false);
 </script>
+	<script src="js/jquery/jquery-1.11.3.min.js"></script>
+	<script>
+		(function() {
+			var $mainContent = $('.main-content'),
+				contentHeight = $mainContent.height(),
+				pageHeight = $('html').height(),
+				winHeight = $(window).height();
+			if ( pageHeight < winHeight) {
+				$mainContent.height(contentHeight + winHeight - pageHeight);
+			}
+		})();
+	</script>
 </body>
 </html>
