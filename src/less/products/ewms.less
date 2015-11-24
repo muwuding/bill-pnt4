@@ -28,20 +28,36 @@
 	}
 
 	h1 {
-		font-size: 60px;
+		font-size: 40px;
 		margin: 0;
 		margin-bottom: 20px;
 	}
 	
 	p {
+		position: relative;
 		line-height: 1.428;
-		margin: 0 auto;
+		margin: 0 auto 10px auto;
 	}
 }
 
 /* 文字层 */
 .chunk-col {
 	position: absolute;
+
+	.list p {
+		padding-left: 16px;
+	}
+
+	.list p:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 15px;
+		left: 2px;
+		width: 6px;
+		height: 6px;
+		border-radius: 3px;
+	}
 }
 
 /* section1 */
@@ -49,24 +65,24 @@
 	color: #fff;
 
 	.fixed-width {
-		background: url("@{imgURL}/bg_s3_1.png") 80% 25%,
-								url("@{imgURL}/bg_s3_2.png") 20% 35%,
-								url("@{imgURL}/bg_s3_3.png") 20% 95%;
+		background: url("@{imgURL}/bg_red_1.png") 10% 10%,
+					url("@{imgURL}/bg_red_3.png") 70% 45%,
+					url("@{imgURL}/bg_red_2.png") 35% 95%;
 		background-repeat: no-repeat;
 		height: 100%;
 	}
 
 	.h1-wrapper {
 		position: relative;
-		padding-top: 380px;
+		padding-top: 27.5%;
 		width: 1060px;
-		font-size: 60px;
+		font-size: 80px;
 		margin: auto;
 	}
 	h1 {
 		width: 100%;
-		height: 0.8em;
-		border: 1px solid currentColor;
+		height: 1.2em;
+		border: 1px solid #fff;
 		border-radius: 6px;
 		text-align: center;
 		position: relative;
@@ -89,12 +105,11 @@
 
 /* section2 */
 .section2-container {
-	color: #825d0c;
+	color: #ac5a0e;
 
 	.fixed-width {
-		background: url("@{imgURL}/bg_s2_1.png") 65% 20%,
-								url("@{imgURL}/bg_s2_2.png") 25% 35%,
-								url("@{imgURL}/bg_s2_3.png") 35% 95%;
+		background: url("@{imgURL}/bg_s1_1.png") 15% 5%,
+					url("@{imgURL}/bg_s1_2.png") 80% 95%;
 		background-repeat: no-repeat;
 		height: 100%;
 	}
@@ -102,32 +117,36 @@
 	.chunk-col{
 
 		&.text {
-			margin-top: -30px;
-			width: 745px;
-			height: 240px;
+			margin-top: -130px;
+			width: 520px;
 			top: 50%;
-			right: 0;
+			left: 0;
 			text-align: left;
 		}
 
 		&.img {
-			margin-top: -110px;
-			width: 321px;
-			height: 326px;
+			margin-top: -160px;
+			width: 636px;
+			height: 414px;
 			top: 50%;
-			left: 0;
+			right: 0;
+		}
+
+		.list p:after {
+			background-color: #ac5a0e;
 		}
 	}
 }
 
 /* section3 */
 .section3-container {
-	color: #ad5a0e;
+	color: #ad5a0c;
 
 	.fixed-width {
-		background: url("@{imgURL}/bg_green_3.png") 15% 20%,
-								url("@{imgURL}/bg_green_2.png") 35% 40%,
-								url("@{imgURL}/bg_green_1.png") 60% 90%;
+		background: url("@{imgURL}/bg_orange_3.png") 15% 20%,
+					url("@{imgURL}/bg_orange_2.png") 35% 40%,
+					url("@{imgURL}/bg_orange_1.png") 80% 60%,
+					url("@{imgURL}/bg_orange_4.png") 60% 90%;
 		background-repeat: no-repeat;
 		height: 100%;
 	}
@@ -135,20 +154,27 @@
 	.chunk-col{
 
 		&.text {
-			margin-top: -100px;
-			width: 700px;
-			height: 260px;
+			margin-top: -150px;
+			width: 780px;
 			top: 50%;
-			left: 5%;
+			right: 0;
 			text-align: left;
 		}
 
 		&.img {
-			margin-top: -150px;
-			width: 231px;
-			height: 416px;
+			margin-top: -140px;
+			width: 345px;
+			height: 338px;
 			top: 50%;
-			right: 12%;
+			left: 0;
+		}
+
+		p {
+			font-size: 20px;
+		}
+
+		.list p:after {
+			background-color: #ad5a0c;
 		}
 	}
 }
@@ -156,11 +182,12 @@
 /* section4 */
 .section4-container {
 
-	color: #b9b108;
+	color: #009c98;
 
 	.fixed-width {
-		background: url("@{imgURL}/bg_blue_1.png") 30% 20%,
-								url("@{imgURL}/bg_blue_2.png") 20% 90%;
+		background: url("@{imgURL}/bg_s2_1.png") 60% 20%,
+					url("@{imgURL}/bg_s2_2.png") 40% 60%,
+					url("@{imgURL}/bg_s2_3.png") 80% 90%;
 		background-repeat: no-repeat;
 		height: 100%;
 	}
@@ -168,32 +195,35 @@
 	.chunk-col{
 
 		&.text {
-			margin-top: -50px;
-			width: 744px;
+			margin-top: -180px;
+			width: 720px;
 			top: 50%;
 			right: 0;
 			text-align: left;
 		}
 
 		&.img {
-			margin-top: -100px;
-			width: 380px;
-			height: 304px;
+			margin-top: -120px;
+			width: 452px;
+			height: 240px;
 			top: 50%;
 			left: 0;
+		}
+
+		.list p:after {
+			background-color: #009c98;
 		}
 	}
 }
 
 /* section5 */
 .section5-container {
-	color: #019e95;
+	color: #087d25;
 
 	.fixed-width {
-		background: url("@{imgURL}/bg_s5_1.png") 15% -5%,
-								url("@{imgURL}/bg_s5_2.png") 20% 20%,
-								url("@{imgURL}/bg_s5_3.png") 40% 60%,
-								url("@{imgURL}/bg_s5_1.png") 80% 100%;
+		background: url("@{imgURL}/bg_green_1.png") 15% 5%,
+					url("@{imgURL}/bg_green_2.png") 35% 30%,
+					url("@{imgURL}/bg_green_3.png") 60% 90%;
 		background-repeat: no-repeat;
 		height: 100%;
 	}
@@ -201,32 +231,40 @@
 	.chunk-col{
 
 		&.text {
-			margin-top: -150px;
-			width: 700px;
+			margin-top: -130px;
+			width: 760px;
 			top: 50%;
 			left: 0;
 			text-align: left;
 		}
 
 		&.img {
-			margin-top: -150px;
-			width: 358px;
-			height: 363px;
+			margin-top: -140px;
+			width: 386px;
+			height: 346px;
 			top: 50%;
-			right: 7%;
+			right: 2%;
+		}
+
+		p {
+			font-size: 16px;
+		}
+
+		.list p:after {
+			top: 10px;
+			background-color: #087d25;
 		}
 	}
 }
 
 /* section6 */
 .section6-container {
-	color: #077c24;
+	color: #b7472f;
 
 	.fixed-width {
-		background: url("@{imgURL}/bg_s5_1.png") 15% -5%,
-								url("@{imgURL}/bg_s5_2.png") 20% 20%,
-								url("@{imgURL}/bg_s5_3.png") 40% 60%,
-								url("@{imgURL}/bg_s5_1.png") 80% 100%;
+		background: url("@{imgURL}/bg_red_1.png") 50% 5%,
+					url("@{imgURL}/bg_red_3.png") 35% 30%,
+					url("@{imgURL}/bg_red_2.png") 20% 95%;
 		background-repeat: no-repeat;
 		height: 100%;
 	}
@@ -234,32 +272,36 @@
 	.chunk-col{
 
 		&.text {
-			margin-top: -150px;
-			width: 700px;
+			margin-top: -135px;
+			width: 680px;
 			top: 50%;
-			left: 0;
+			right: 0;
 			text-align: left;
 		}
 
 		&.img {
-			margin-top: -150px;
-			width: 358px;
-			height: 363px;
+			margin-top: -140px;
+			width: 411px;
+			height: 325px;
 			top: 50%;
-			right: 7%;
+			left: 2%;
+		}
+
+		.list p:after {
+			background-color: #b7472f;
 		}
 	}
 }
 
 /* section7 */
 .section7-container {
-	color: #0e3a5d;
+	color: #8957a0;
 
 	.fixed-width {
-		background: url("@{imgURL}/bg_s5_1.png") 15% -5%,
-								url("@{imgURL}/bg_s5_2.png") 20% 20%,
-								url("@{imgURL}/bg_s5_3.png") 40% 60%,
-								url("@{imgURL}/bg_s5_1.png") 80% 100%;
+		background: url("@{imgURL}/bg_s5_1.png") 15% 5%,
+					url("@{imgURL}/bg_s5_2.png") 20% 20%,
+					url("@{imgURL}/bg_s5_3.png") 40% 60%,
+					url("@{imgURL}/bg_s5_1.png") 80% 100%;
 		background-repeat: no-repeat;
 		height: 100%;
 	}
@@ -267,8 +309,8 @@
 	.chunk-col{
 
 		&.text {
-			margin-top: -150px;
-			width: 700px;
+			margin-top: -130px;
+			width: 640px;
 			top: 50%;
 			left: 0;
 			text-align: left;
@@ -276,23 +318,25 @@
 
 		&.img {
 			margin-top: -150px;
-			width: 358px;
-			height: 363px;
+			width: 366px;
+			height: 355px;
 			top: 50%;
-			right: 7%;
+			right: 3%;
+		}
+
+		.list p:after {
+			background-color: #8957a0;
 		}
 	}
 }
 
 /* section8 */
 .section8-container {
-	color: #8a58a1;
+	color: #825c0b;
 
 	.fixed-width {
-		background: url("@{imgURL}/bg_s5_1.png") 15% -5%,
-								url("@{imgURL}/bg_s5_2.png") 20% 20%,
-								url("@{imgURL}/bg_s5_3.png") 40% 60%,
-								url("@{imgURL}/bg_s5_1.png") 80% 100%;
+		background: url("@{imgURL}/bg_s1_1.png") 15% 5%,
+					url("@{imgURL}/bg_s1_2.png") 60% 80%;
 		background-repeat: no-repeat;
 		height: 100%;
 	}
@@ -300,85 +344,23 @@
 	.chunk-col{
 
 		&.text {
-			margin-top: -150px;
-			width: 700px;
+			margin-top: -110px;
+			width: 680px;
 			top: 50%;
-			left: 0;
+			right: 0;
 			text-align: left;
 		}
 
 		&.img {
-			margin-top: -150px;
-			width: 358px;
-			height: 363px;
+			margin-top: -90px;
+			width: 385px;
+			height: 260px;
 			top: 50%;
-			right: 7%;
-		}
-	}
-}
-
-/* section9 */
-.section9-container {
-	color: #b84832;
-
-	.fixed-width {
-		background: url("@{imgURL}/bg_s5_1.png") 15% -5%,
-								url("@{imgURL}/bg_s5_2.png") 20% 20%,
-								url("@{imgURL}/bg_s5_3.png") 40% 60%,
-								url("@{imgURL}/bg_s5_1.png") 80% 100%;
-		background-repeat: no-repeat;
-		height: 100%;
-	}
-
-	.chunk-col{
-
-		&.text {
-			margin-top: -150px;
-			width: 700px;
-			top: 50%;
-			left: 0;
-			text-align: left;
+			left: 3%;
 		}
 
-		&.img {
-			margin-top: -150px;
-			width: 358px;
-			height: 363px;
-			top: 50%;
-			right: 7%;
-		}
-	}
-}
-
-/* section10 */
-.section10-container {
-	color: #0a3a5e;
-
-	.fixed-width {
-		background: url("@{imgURL}/bg_s5_1.png") 15% -5%,
-								url("@{imgURL}/bg_s5_2.png") 20% 20%,
-								url("@{imgURL}/bg_s5_3.png") 40% 60%,
-								url("@{imgURL}/bg_s5_1.png") 80% 100%;
-		background-repeat: no-repeat;
-		height: 100%;
-	}
-
-	.chunk-col{
-
-		&.text {
-			margin-top: -150px;
-			width: 700px;
-			top: 50%;
-			left: 0;
-			text-align: left;
-		}
-
-		&.img {
-			margin-top: -150px;
-			width: 358px;
-			height: 363px;
-			top: 50%;
-			right: 7%;
+		.list p:after {
+			background-color: #825c0b;
 		}
 	}
 }
