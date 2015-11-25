@@ -103,7 +103,7 @@ function createNav(dir) {
                             '<li>'+
                                 '<h2 class="nav-group-title"><span class="iconfont icon-daibanyewu"></span>配套软硬件产品</h2>'+
                                 '<div class="subnav-solution-content">'+
-                                    '<a href="' + dir + 'products/mc.html">移动手持数据终端</a>'+
+                                    '<a href="' + dir + 'products/wp918.html">移动手持数据终端</a>'+
                                     '<a href="' + dir + 'products/template.html">蓝牙电子称</a>'+
                                 '</div>'+
                             '</li>'+
