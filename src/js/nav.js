@@ -1,6 +1,6 @@
 function createNav(dir) {
     var html = '<ul>'+
-                '<li class="website-logo">'+
+                '<li class="logo">'+
                     '<a href="' + dir + 'index.html">'+
                         '<img src="' + dir + 'images/common_logo.png" alt="4PNT">'+
                     '</a>'+
@@ -113,7 +113,7 @@ function createNav(dir) {
                 '<li>'+
                     '<span class="nav-title">服务</span>'+
                     '<div class="subnav-wrapper">'+
-                        '<ul class="subnav service-subnav">'+
+                        '<ul class="subnav service-subnav clearfix">'+
                             '<li>'+
                                 '<img src="' + dir + 'images/nav_service_1.png" alt="IT解决方案服务">'+
                                 '<a href="' + dir + 'products/erp.html">IT解决方案服务</a>'+
