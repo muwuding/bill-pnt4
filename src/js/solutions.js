@@ -55,12 +55,32 @@ var solutions = {
     var top = $("#tabs").offset().top;
     var scrollTop = $(window).scrollTop();
 
-    console.log(top + "," + scrollTop);
-
     if(scrollTop >= 557){
       $("#tabs").css("position","fixed");
     }else{
       $("#tabs").css("position","static");
+    }
+  },
+
+  //锚点切换
+  tabsToggle : function() {
+    $("#tabs a").on("click",function() {
+      $(this).siblings("a").removeClass("current");
+      $(this).addClass("current");
+    });
+  },
+
+  //ie锚点调整位置
+  hashPosition : function() {
+
+    if(location.hash){
+       var target = $(location.hash);
+       if(target.length==1){
+           var top = target.offset().top-44;
+           if(top > 0){
+               $('html,body').animate({scrollTop:top}, 1000);
+           }
+       }
     }
   }
 };
@@ -68,9 +88,12 @@ var solutions = {
 $(document).ready(function(){
 
   solutions.adjustWrapMargin();
-  solutions.clickTabsEasing();
+ // solutions.clickTabsEasing();
   solutions.clickMenu();
   solutions.tabsPosition();
+  solutions.tabsToggle();
+  solutions.hashPosition();
+  
 
 });
 

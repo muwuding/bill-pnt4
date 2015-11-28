@@ -1,5 +1,5 @@
 function createNav(dir) {
-    var html = '<ul>'+
+    var html = '<ul id="navbar">'+
                 '<li class="logo">'+
                     '<a href="' + dir + 'index.html">'+
                         '<img src="' + dir + 'images/common_logo.png" alt="4PNT">'+
@@ -11,7 +11,6 @@ function createNav(dir) {
                 '<li>'+
                     '<span class="nav-title">解决方案</span>'+
                     '<div class="subnav-wrapper">'+
-                        '<span class="iconfont icon-tuolinglogo"></span>'+
                         '<ul class="subnav subnav-solution">'+
                             '<li class="default" style="margin-top:-30px;">'+
                                 '<h2 class="nav-group-title"  style="padding-top:30px;">'+
@@ -59,7 +58,6 @@ function createNav(dir) {
                 '<li>'+
                     '<span class="nav-title">产品</span>'+
                     '<div class="subnav-wrapper">'+
-                        '<span class="iconfont icon-tuolinglogo"></span>'+
                         '<ul class="subnav subnav-solution">'+
                             '<li class="default" style="margin-top:-30px;">'+
                                 '<h2 class="nav-group-title"  style="padding-top:30px;">'+
@@ -113,7 +111,7 @@ function createNav(dir) {
                 '<li>'+
                     '<span class="nav-title">服务</span>'+
                     '<div class="subnav-wrapper">'+
-                        '<ul class="subnav service-subnav clearfix">'+
+                        '<ul class="subnav subnav-service clearfix">'+
                             '<li>'+
                                 '<img src="' + dir + 'images/nav_service_1.png" alt="IT解决方案服务">'+
                                 '<a href="' + dir + 'products/erp.html">IT解决方案服务</a>'+

@@ -44,6 +44,7 @@ h1,h2,h3,h4,h5,h6 {
 
 	h4 {
 		font-size: 14px;
+		font-weight: 400;
 		color: #999;
 	}
 }
@@ -53,12 +54,12 @@ h1,h2,h3,h4,h5,h6 {
 	height:40px;
 	line-height:40px;
 	font-size:16px;
-	font-weight:700;
+	font-weight: 400;
 	color:#7d7d7d;
-	cursor:pointer;
+	cursor:default;
 	background: url(../images/solutions/common/icon_1.png) no-repeat 95% -33px;
 
-	&.current,&:hover {
+	&.current {
 		background-color: #eaeaea;
 		background-position: 95% 16px;
 		color: #22a5e9;
@@ -69,6 +70,7 @@ h1,h2,h3,h4,h5,h6 {
 	line-height:40px;
 	padding-left:46px;
 	font-size: 14px;
+	font-weight: 400;
 }
 .wrap-list .icon  {
 	position:absolute;
@@ -112,8 +114,9 @@ h1,h2,h3,h4,h5,h6 {
 		display: block;
 		float: left;
 		width: 142px;
-		height: 58px;
-		line-height: 70px;
+		height: 56px;
+		line-height: 56px;
+		font-size: 18px;
 		text-align: center;
 		cursor: pointer;
 		background: url(../images/solutions/common/bg_2.jpg) no-repeat center bottom;
@@ -121,8 +124,17 @@ h1,h2,h3,h4,h5,h6 {
 		&.current {
 			color: #00a0e8;
 			background-image: url(../images/solutions/common/bg_1.jpg);
+			cursor: default;
 		}
 	}
+}
+
+.target-fix {
+  position: relative;
+  top: -76px; // 偏移值
+  display: block;
+  height: 0;
+  overflow: hidden;
 }
 
 .content-section {
@@ -136,7 +148,8 @@ h1,h2,h3,h4,h5,h6 {
 			float: left;
 			padding-right: 10px;
 			height: 22px;
-			font-size: 16px;
+			font-size: 18px;
+			font-weight: 400;
 			background-color: #fff;
 
 			i {
@@ -149,17 +162,40 @@ h1,h2,h3,h4,h5,h6 {
 		}
 		}
 	}
+
+	&:target{
+	    padding-top:44px;
+	}
 }
 
 .section-content {
 	padding: 30px 0 0;
+	font-size: 14px;
+	line-height: 1.8;
 
 	p {
-		margin-bottom: 10px;
-		line-height: 24px;
 		text-indent: 2em;
 		text-align: left;
+
+		&.list {
+			position: relative;
+			padding-left: 35px;
+			text-indent: 0;
+			
+			&:after {
+				display: block;
+				position: absolute;
+				top: 10px;
+				left: 22px;
+				content: '';
+				width: 4px;
+				height: 4px;
+				border-radius: 2px;
+				background: #7d7d7d;
+			}
+		}
 	}
+
 
 	ul {
 		margin: 0;

@@ -1,6 +1,4 @@
 function createSidebar(dir) {
-  var link1 = "http://b.qq.com/webc.htm?new=0&sid=2508935692&o=http://www.4pnt.com/&q=7', '_blank', 'height=502, width=644,toolbar=no,scrollbars=no,menubar=no,status=no');";
-  var link2 = "http://b.qq.com/webc.htm?new=0&sid=2022034472&o=http://www.4pnt.com/&q=7', '_blank', 'height=502, width=644,toolbar=no,scrollbars=no,menubar=no,status=no');";
   var html = '<div class="sidemenu-container">' +
         '<div class="sidemenu-contact">' +
           '<span class="iconfont icon-kefubu"></span>' +
@@ -12,10 +10,10 @@ function createSidebar(dir) {
               '<p>在线咨询</p>' +
               '<ul>' +
                 '<li>' +
-                  '<a href="javascript:void(0);" onclick="javascript:window.open(' + link1 +');"><img src="' + dir + 'images/index_icon_12.png" alt="" width="18" height="18"><span style="margin: 0 10px;">华东</span><span>Jason</span></a>' +
+                  '<a href="javascript:void(0);" onclick="javascript:window.open(\'http://b.qq.com/webc.htm?new=0&sid=2508935692&o=http://www.4pnt.com/&q=7\', \'_blank\', \'height=502, width=644,toolbar=no,scrollbars=no,menubar=no,status=no\');"><img src="' + dir + 'images/index_icon_12.png" alt="" width="18" height="18"><span style="margin: 0 10px;">华东</span><span>Jason</span></a>' +
                 '</li>' +
                 '<li>' +
-                  '<a href="javascript:void(0);" onclick="javascript:window.open(' + link2 +');"><img src="' + dir + 'images/index_icon_12.png" alt="" width="18" height="18"><span style="margin: 0 10px;">华南</span><span>Grady</span></a>' +
+                  '<a href="javascript:void(0);" onclick="javascript:window.open(\'http://b.qq.com/webc.htm?new=0&sid=2022034472&o=http://www.4pnt.com/&q=7\', \'_blank\', \'height=502, width=644,toolbar=no,scrollbars=no,menubar=no,status=no\');"><img src="' + dir + 'images/index_icon_12.png" alt="" width="18" height="18"><span style="margin: 0 10px;">华南</span><span>Grady</span></a>' +
                 '</li>' +
               '</ul>' +
             '</li>' +
