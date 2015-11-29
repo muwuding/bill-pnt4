@@ -258,6 +258,16 @@ a:focus {
 			display: inline-block;
 		}
 	}
+
+	li + li {
+		&:before {
+			content: '|';
+			display: inline-block;
+			margin-right: 5px;
+			margin-left: 5px;
+			color: #ddd;
+		}
+	}
 }
 
 //导航
