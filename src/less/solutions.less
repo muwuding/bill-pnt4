@@ -25,9 +25,11 @@ h1,h2,h3,h4,h5,h6 {
 		width: 100%;
 		min-width: 940px;
 		background-color: #fff;
+		border-left: 1px solid #ddd;
 
 		.wrap-right {
 			padding-top: 40px;
+			padding-left:68px;
 			width: 872px;
 		}
 	}
@@ -105,15 +107,15 @@ h1,h2,h3,h4,h5,h6 {
 
 /* main */
 .main-tabs {
-	width: 920px;
+	width: 872px;
 	top: 0;
-	padding-left:68px;
 	background: #fff;
+	z-index: 99;
 
 	a {
 		display: block;
 		float: left;
-		width: 142px;
+		width: 145px;
 		height: 56px;
 		line-height: 56px;
 		font-size: 18px;
@@ -138,7 +140,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .content-section {
-	padding: 20px 0 20px 68px;
+	padding: 20px 0;
+	width: 870px;
 
 	.section-title {
 		height: 11px;
@@ -179,14 +182,37 @@ h1,h2,h3,h4,h5,h6 {
 
 		&.list {
 			position: relative;
-			padding-left: 35px;
+			padding-left: 30px;
 			text-indent: 0;
 			
 			&:after {
 				display: block;
 				position: absolute;
 				top: 10px;
-				left: 22px;
+				left: 19px;
+				content: '';
+				width: 4px;
+				height: 4px;
+				border-radius: 2px;
+				background: #7d7d7d;
+			}
+		}
+	}
+
+	p.bold {
+		text-align: left;
+		font-weight: 700;
+
+		&.list {
+			position: relative;
+			padding-left: 11px;
+			text-indent: 0;
+			
+			&:after {
+				display: block;
+				position: absolute;
+				top: 10px;
+				left: 0;
 				content: '';
 				width: 4px;
 				height: 4px;

@@ -330,6 +330,7 @@ a:hover,a:link,a:active,a:visited {
 
 /*左菜单*/
 .content-wrapper {
+	min-width: 1200px;
 	@sidebar-width: 280px;
 	background-color: @bg-content;
 	@pad-w: 15px;
@@ -391,11 +392,17 @@ a:hover,a:link,a:active,a:visited {
 	}
 	.main-content {
 		float: left;
-		width: e("calc(100% - @{sidebar-width})");
 		min-height: 200px;
 		border-left: 1px solid @border-color;
 		background-color: #fff;
-		padding: 0 15px 50px 30px;
+		padding: 0 0 50px 30px;
+		width: 872px;
+
+		p {
+			padding-top: 1em;
+			line-height: 1.8;
+			text-indent: 2em;
+		}
 	}
 	.content-title {
 		@padding-width: 9.5px;
@@ -413,4 +420,60 @@ a:hover,a:link,a:active,a:visited {
 			height: 3px;
 		}
 	}
+}
+
+.sol-wrap-left {
+		float: left;
+		margin-left: -280px;
+		width:280px;
+	}
+
+.sol-wrap-main {
+	float: left;
+	width: 100%;
+	background-color: #fff;
+
+	.wrap-right {
+		padding-top: 40px;
+		padding-left:68px;
+	}
+}
+
+.cultrue-content {
+
+	h3 {
+		margin-top: 30px;
+	}
+
+	div {
+		padding-top: 30px;
+	}
+}
+
+
+
+.contact-content {
+	
+	p {
+		padding-bottom: 20px;
+		text-indent:  0 !important;
+		line-height: 30px;
+	}
+}
+
+.contact-table {
+	width: 100%;
+
+	td {
+		height: 50px;
+		line-height: 50px;
+	}
+
+	th {
+		font-weight: 700;
+	}
+}
+
+.aboutus-banner {
+	min-width: 1200px;
 }

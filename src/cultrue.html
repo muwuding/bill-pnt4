@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>4PNT四方网络科技|企业文化</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="renderer" content="ie-stand">
+	<link rel="stylesheet" href="css/flexslider/flexslider.css?ver=20151116">
+	<link rel="stylesheet" href="css/iconfont/iconfont.css?ver=20151116">
+	<link rel="stylesheet" href="css/base.min.css?ver=20151116">
+	<link rel="stylesheet" href="css/aboutus.min.css?ver=20151116">
+	<link rel="stylesheet" href="css/oldapp/i-timeline.css?ver=20151116">
+	<script type="text/javascript" src="js/nav.min.js?ver=20151116"></script>
+	<script type="text/javascript" src="js/sidebar.min.js?ver=20151116"></script>
+	<!-- Respond.js for IE8 support of media queries -->
+	<!--[if lt IE 9]>
+	  	<link rel="stylesheet" href="css/ie8.min.css?ver=20151116">
+		<script src="js/bootstrap/respond.min.js?ver=20151116"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<ul class="list-inline">
+				<li>
+					<span class="iconfont icon-ordinarymap"></span>
+					<a href="#">选择区域/语言
+					<span class="caret"></span>
+					</a>
+				</li>
+				<li>
+					<a href="login.html">登录</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="navbar">
+		<div class="container">
+			<script type="text/javascript">createNav('./')</script>
+		</div>
+	</div>
+
+	<div class="aboutus-banner">
+		<img src="images/aboutus_bg.jpg" alt="">
+	</div>
+
+	<div class="content-wrapper clearfix" id="wrap">
+		<div class="container">
+			<div class="sol-wrap-left">
+				<div class="left-menu-section">
+					<ul>
+						<li>
+							<a href="aboutus.html">
+								<span class="iconfont icon-weihu"></span>
+								公司概况
+							</a>
+						</li>
+						<li>
+							<a href="history.html">
+								<span class="iconfont icon-weihu"></span>
+								发展历程
+							</a>
+						</li>
+						<li class="active">
+							<a href="cultrue.html">
+								<span class="iconfont icon-wodefuwu"></span>
+								公司文化
+							</a>
+						</li>
+						<li>
+							<a href="contact.html">
+								<span class="iconfont icon-book"></span>
+								联系我们
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="sol-wrap-main" style="margin-top:1px;">
+				<div class="main-content cultrue-content">
+					<h2 class="content-title">公司文化</h2>
+					<h3>公司愿景</h3>
+					<div>
+						<span>成为最值得信赖的电商与物流生态圈增值服务商
+						</span>
+					</div>
+					<h3>公司使命</h3>
+					<div>
+						<span>让物流更经济更高效，让生意更好做更盈利！
+						</span>
+					</div>
+					<h3>核心价值观</h3>
+					<div>
+						<span>生态融合 共赢未来
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="text-center footer">
+		Copyright &copy;2015 4PNT<a href="http://www.4pnt.com/" target="_blank"></a>. All Rights Reserved. 四方网络科技 版权所有 粤ICP备15073770号-1
+	</div>
+	<script type="text/javascript">createSidebar("./")</script>
+	<script src="js/jquery/jquery-1.11.3.min.js?ver=20151116"></script>
+	<script src="js/flexslider/jquery.flexslider.min.js?ver=20151116"></script>
+	<script src="js/common.min.js?ver=20151116"></script>
+	<script>
+		// iPAD下CSS的hover属性兼容处理
+		document.addEventListener && document.addEventListener('touchstart',function(){},false);
+	</script>
+	<script>
+		(function() {
+			var $mainContent = $('.main-content'),
+				contentHeight = $mainContent.height(),
+				pageHeight = $('html').height(),
+				winHeight = $(window).height();
+			if ( pageHeight < winHeight) {
+				$mainContent.height(contentHeight + winHeight - pageHeight);
+			}
+		})();
+
+		if($(window).width() > 1200){
+		      $("#wrap").css("padding-left",($(window).width()-1200)/2+280);
+		      $("body").show();
+		    }else{
+		      $("#wrap").css("padding-left",280);
+		      $("body").show();
+		    }
+	</script>
+</body>
+</html>

@@ -17,39 +17,39 @@ function createNav(dir) {
                                     '<span class="iconfont icon-shengchanlian"></span>跨境电子商务'+
                                 '</h2>'+
                                 '<div class="subnav-solution-content">'+
-                                    '<a href="' + dir + 'solutions/hwcy.html">跨境电商综合服务平台</a>'+
-                                    '<a href="' + dir + 'solutions/hwcy.html">跨境电商公共服务平台</a>'+
+                                    '<a href="' + dir + 'solutions/zhfw.html">跨境电商综合服务平台</a>'+
+                                    '<a href="' + dir + 'solutions/zhfw.html">跨境电商公共服务平台</a>'+
                                     '<a href="' + dir + 'solutions/hwcy.html">海外仓仓配物流</a>'+
-                                    '<a href="' + dir + 'solutions/hwcy.html">B2B2C进口电商</a>'+
-                                    '<a href="' + dir + 'solutions/hwcy.html">B2B2C进口物流</a>'+
-                                    '<a href="' + dir + 'solutions/hwcy.html">跨境电商全程物流</a>'+
-                                    '<a href="' + dir + 'solutions/hwcy.html">跨境电商商城</a>'+
+                                    '<a href="#">B2B2C进口电商</a>'+
+                                    '<a href="#">B2B2C进口物流</a>'+
+                                    '<a href="#">跨境电商全程物流</a>'+
+                                    '<a href="#">跨境电商商城</a>'+
                                 '</div>'+
                             '</li>'+
                             '<li>'+
                                 '<h2 class="nav-group-title"><span class="iconfont icon-unie63c"></span>内贸电子商务</h2>'+
                                 '<div class="subnav-solution-content">'+
-                                    '<a href="' + dir + 'solutions/hwcy.html">电商供应链与物流</a>'+
-                                    '<a href="' + dir + 'solutions/hwcy.html">电商仓仓配物流</a>'+
-                                    '<a href="' + dir + 'solutions/hwcy.html">电子商务商城</a>'+
+                                    '<a href="#">电商供应链与物流</a>'+
+                                    '<a href="#">电商仓仓配物流</a>'+
+                                    '<a href="#">电子商务商城</a>'+
                                 '</div>'+
                             '</li>'+
                             '<li>'+
                                 '<h2 class="nav-group-title"><span class="iconfont icon-shuziwuliu"></span>智慧物流</h2>'+
                                 '<div class="subnav-solution-content">'+
-                                    '<a href="' + dir + 'solutions/hwcy.html">综合物流</a>'+
-                                    '<a href="' + dir + 'solutions/hwcy.html">仓储配送</a>'+
-                                    '<a href="' + dir + 'solutions/hwcy.html">公路运输</a>'+
-                                    '<a href="' + dir + 'solutions/hwcy.html">多式联运</a>'+
-                                    '<a href="' + dir + 'solutions/hwcy.html">保税物流</a>'+
-                                    '<a href="' + dir + 'solutions/hwcy.html">电商物流</a>'+
+                                    '<a href="#">综合物流</a>'+
+                                    '<a href="#">仓储配送</a>'+
+                                    '<a href="#">公路运输</a>'+
+                                    '<a href="#">多式联运</a>'+
+                                    '<a href="#">保税物流</a>'+
+                                    '<a href="#">电商物流</a>'+
                                 '</div>'+
                             '</li>'+
                             '<li>'+
                                 '<h2 class="nav-group-title"><span class="iconfont icon-iconxianlufeiji"></span>智慧园区</h2>'+
                                 '<div class="subnav-solution-content">'+
-                                    '<a href="' + dir + 'solutions/hwcy.html">商贸物流园/城/市场</a>'+
-                                    '<a href="' + dir + 'solutions/hwcy.html">电商产业园</a>'+
+                                    '<a href="#">商贸物流园/城/市场</a>'+
+                                    '<a href="#">电商产业园</a>'+
                                 '</div>'+
                             '</li>'+
                         '</ul>'+
@@ -64,10 +64,10 @@ function createNav(dir) {
                                     '<span class="iconfont icon-gouwu"></span>电子商务商城系统'+
                                 '</h2>'+
                                 '<div class="subnav-solution-content">'+
-                                    '<a href="' + dir + 'products/template.html">电子商务商城系统总览</a>'+
-                                    '<a href="' + dir + 'products/template.html">B2C商城系统</a>'+
-                                    '<a href="' + dir + 'products/template.html">B2B2C商城系统</a>'+
-                                    '<a href="' + dir + 'products/template.html">B2B分销商城</a>'+
+                                    '<a href="#">电子商务商城系统总览</a>'+
+                                    '<a href="#">B2C商城系统</a>'+
+                                    '<a href="#">B2B2C商城系统</a>'+
+                                    '<a href="#">B2B分销商城</a>'+
                                 '</div>'+
                             '</li>'+
                             '<li>'+
@@ -102,7 +102,7 @@ function createNav(dir) {
                                 '<h2 class="nav-group-title"><span class="iconfont icon-daibanyewu"></span>配套软硬件产品</h2>'+
                                 '<div class="subnav-solution-content">'+
                                     '<a href="' + dir + 'products/wp918.html">移动手持数据终端</a>'+
-                                    '<a href="' + dir + 'products/template.html">蓝牙电子称</a>'+
+                                    '<a href="#">蓝牙电子称</a>'+
                                 '</div>'+
                             '</li>'+
                         '</ul>'+
@@ -114,17 +114,17 @@ function createNav(dir) {
                         '<ul class="subnav subnav-service clearfix">'+
                             '<li>'+
                                 '<img src="' + dir + 'images/nav_service_1.png" alt="IT解决方案服务">'+
-                                '<a href="' + dir + 'products/erp.html">IT解决方案服务</a>'+
+                                '<a href="#">IT解决方案服务</a>'+
                                 '<p>4PNT专注电子商务与物流领域，为客户提供电子商务与物流业务应用系统规划与实施服务。</p>'+
                             '</li>'+
                             '<li>'+
                                 '<img src="' + dir + 'images/nav_service_2.png" alt="IT运维服务">'+
-                                '<a href="' + dir + 'products/erp.html">IT运维与运营服务</a>'+
+                                '<a href="#">IT运维与运营服务</a>'+
                                 '<p>4PNT为客户提供应用系统的托管与日常运维服务，同时为园区类（如物流园区、商贸市场，及电商产业园等）客户提供应用系统合作运营服务。</p>'+
                             '</li>'+
                             '<li>'+
                                 '<img src="' + dir + 'images/nav_service_3.png" alt="驼铃云服务">'+
-                                '<a href="' + dir + 'products/erp.html">驼铃云服务</a>'+
+                                '<a href="' + dir + 'tuoling.html">驼铃云服务</a>'+
                                 '<p>4PNT驼铃云平台为电子商务生态成员（包括卖家、买家、物流服务商、增值服务提供商等）提供saas业务应用系统、资源共享、业务撮合、供应链融资等云服务。</p>'+
                             '</li>'+
                         '</ul>'+
