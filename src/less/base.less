@@ -351,18 +351,23 @@ a:focus {
 		left: 330px;
 		right: 15px;
 		background-color: #efefef;
-		box-shadow: 0 3px 3px #999;
+		box-shadow: 0 3px 3px #ddd;
 		z-index: 9999;
-		height: 0;
+    height: 0;
 		overflow: hidden;
-		transition: height 0.3s;
-
+		
 		li {
 			float: none;
 		}
 
-    &.active {
-      height: auto;
+    &.wrapper-350.active {
+      height: 350px;
+      transition: height .1s;
+    }
+
+    &.wrapper-300.active {
+      height: 300px;
+      transition: height .1s;
     }
 	}
 

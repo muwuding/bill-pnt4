@@ -10,7 +10,7 @@ function createNav(dir) {
                 '</li>'+ 
                 '<li>'+
                     '<span class="nav-title">解决方案</span>'+
-                    '<div class="subnav-wrapper">'+
+                    '<div class="subnav-wrapper wrapper-300">'+
                         '<ul class="subnav subnav-solution">'+
                             '<li class="default" style="margin-top:-30px;">'+
                                 '<h2 class="nav-group-title"  style="padding-top:30px;">'+
@@ -35,7 +35,7 @@ function createNav(dir) {
                                 '</div>'+
                             '</li>'+
                             '<li>'+
-                                '<h2 class="nav-group-title"><span class="iconfont icon-shuziwuliu"></span>智慧物流</h2>'+
+                                '<h2 class="nav-group-title"><span class="iconfont icon-shiliangzhinengduixiang4"></span>智慧物流</h2>'+
                                 '<div class="subnav-solution-content">'+
                                     '<a href="#">综合物流</a>'+
                                     '<a href="#">仓储配送</a>'+
@@ -46,7 +46,7 @@ function createNav(dir) {
                                 '</div>'+
                             '</li>'+
                             '<li>'+
-                                '<h2 class="nav-group-title"><span class="iconfont icon-iconxianlufeiji"></span>智慧园区</h2>'+
+                                '<h2 class="nav-group-title"><span class="iconfont icon-shuziwuliu"></span>智慧园区</h2>'+
                                 '<div class="subnav-solution-content">'+
                                     '<a href="#">商贸物流园/城/市场</a>'+
                                     '<a href="#">电商产业园</a>'+
@@ -57,7 +57,7 @@ function createNav(dir) {
                 '</li>'+
                 '<li>'+
                     '<span class="nav-title">产品</span>'+
-                    '<div class="subnav-wrapper">'+
+                    '<div class="subnav-wrapper wrapper-300">'+
                         '<ul class="subnav subnav-solution">'+
                             '<li class="default" style="margin-top:-30px;">'+
                                 '<h2 class="nav-group-title"  style="padding-top:30px;">'+
@@ -110,7 +110,7 @@ function createNav(dir) {
                 '</li>'+
                 '<li>'+
                     '<span class="nav-title">服务</span>'+
-                    '<div class="subnav-wrapper">'+
+                    '<div class="subnav-wrapper wrapper-350">'+
                         '<ul class="subnav subnav-service clearfix">'+
                             '<li>'+
                                 '<img src="' + dir + 'images/nav_service_1.png" alt="IT解决方案服务">'+

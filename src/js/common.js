@@ -9,10 +9,11 @@ $(function(){
 
         timer = setTimeout(function(){
             $(".subnav-wrapper").removeClass("active");
-            $this.find(".subnav-wrapper").addClass("active");
-        },250);
+            $this.find(".subnav-wrapper").addClass("active").slideDown();
+        },350);
         
     }).on("mouseleave",function(){
+        clearTimeout(timer);
         $(".subnav-wrapper").removeClass("active");
     });
 });

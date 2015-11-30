@@ -25,9 +25,7 @@ var solutions = {
       href = $(this).attr("href");
       $dom.animate({
         scrollTop: $(href).offset().top
-      },{duration:800,easing:'easeOutExpo'}, function () {
-        window.location.hash = href;
-      });
+      },{duration:800,easing:'easeOutExpo'}, function() {});
       return false;
     });
   },
@@ -88,7 +86,7 @@ var solutions = {
 $(document).ready(function(){
 
   solutions.adjustWrapMargin();
- // solutions.clickTabsEasing();
+  solutions.clickTabsEasing();
   solutions.clickMenu();
   solutions.tabsPosition();
   solutions.tabsToggle();
