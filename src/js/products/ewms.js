@@ -31,5 +31,6 @@ $(function () {
         tooltips: ["物流运营管理系统","物流运营管理系统总览", "业务委托管理系统", "物流计划管理系统", "公路运输管理系统", "仓库管理系统",
                    "海空铁运输管理系统","关务管理系统","车务管理系统","计费与结算管理系统"]
     };
-    fullpageShow(o.bgColors, o.tooltips, $("#fullpage"))
+    fullpageShow(o.bgColors, o.tooltips, $("#fullpage"));
+    $("body").show();
 });

@@ -30,5 +30,6 @@ $(function () {
                 "rgb(109,253,156)","rgb(240,173,157)","rgb(223,178,217)","rgb(230,199,153)"],
         tooltips: ["电商ERP", "系统总览", "供应链管理", "仓配管理", "集货管理", "物流运输","关务管理","费用核算"]
     };
-    fullpageShow(o.bgColors, o.tooltips, $("#fullpage"))
+    fullpageShow(o.bgColors, o.tooltips, $("#fullpage"));
+    $("body").show();
 });

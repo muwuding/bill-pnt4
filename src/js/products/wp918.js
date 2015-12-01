@@ -29,5 +29,6 @@ $(function () {
         bgColors: ["rgb(210,210,210)", "rgb(152,255,249)", "rgb(109,253,156)", "rgb(161,206,239)", "rgb(223,178,217)"],
         tooltips: ["WP918", "高性能", "人性化设计", "高可靠性", "高配置"]
     };
-    fullpageShow(o.bgColors, o.tooltips, $("#fullpage"))
+    fullpageShow(o.bgColors, o.tooltips, $("#fullpage"));
+    $("body").show();
 });
