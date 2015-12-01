@@ -32,5 +32,5 @@ $(function () {
                    "海空铁运输管理系统","关务管理系统","车务管理系统","计费与结算管理系统"]
     };
     fullpageShow(o.bgColors, o.tooltips, $("#fullpage"));
-    $("body").show();
+    $("body").css("visibility","visible");
 });

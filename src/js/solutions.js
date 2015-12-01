@@ -6,10 +6,10 @@ var solutions = {
   adjustWrapMargin: function() {
 
     if($(window).width() > 1200){
-      $("#wrap").css("padding-left",($(window).width()-1200)/2+260);
+      $("#wrap").css("padding-left",($(window).width()-1200)/2+230);
       $("body").show();
     }else{
-      $("#wrap").css("padding-left",260);
+      $("#wrap").css("padding-left",230);
       $("body").show();
     }
   },

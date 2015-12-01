@@ -11,6 +11,7 @@ function createNav(dir) {
                 '<li>'+
                     '<span class="nav-title">解决方案</span>'+
                     '<div class="subnav-wrapper wrapper-300">'+
+                        '<span class="iconfont icon-tuolinglogo"></span>' +
                         '<ul class="subnav subnav-solution">'+
                             '<li class="default" style="margin-top:-30px;">'+
                                 '<h2 class="nav-group-title"  style="padding-top:30px;">'+
@@ -48,8 +49,10 @@ function createNav(dir) {
                             '<li>'+
                                 '<h2 class="nav-group-title"><span class="iconfont icon-shuziwuliu"></span>智慧园区</h2>'+
                                 '<div class="subnav-solution-content">'+
-                                    '<a href="#">商贸物流园/城/市场</a>'+
                                     '<a href="#">电商产业园</a>'+
+                                    '<a href="#">物流园区</a>'+
+                                    '<a href="#">商贸市场</a>'+
+                                    '<a href="#">商品交易中心</a>'+
                                 '</div>'+
                             '</li>'+
                         '</ul>'+
@@ -58,6 +61,7 @@ function createNav(dir) {
                 '<li>'+
                     '<span class="nav-title">产品</span>'+
                     '<div class="subnav-wrapper wrapper-300">'+
+                    '<span class="iconfont icon-tuolinglogo"></span>' +
                         '<ul class="subnav subnav-solution">'+
                             '<li class="default" style="margin-top:-30px;">'+
                                 '<h2 class="nav-group-title"  style="padding-top:30px;">'+

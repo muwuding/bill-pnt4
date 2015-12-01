@@ -31,5 +31,5 @@ $(function () {
         tooltips: ["电商ERP", "系统总览", "供应链管理", "仓配管理", "集货管理", "物流运输","关务管理","费用核算"]
     };
     fullpageShow(o.bgColors, o.tooltips, $("#fullpage"));
-    $("body").show();
+    $("body").css("visibility","visible");
 });

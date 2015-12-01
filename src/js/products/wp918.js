@@ -30,5 +30,5 @@ $(function () {
         tooltips: ["WP918", "高性能", "人性化设计", "高可靠性", "高配置"]
     };
     fullpageShow(o.bgColors, o.tooltips, $("#fullpage"));
-    $("body").show();
+    $("body").css("visibility","visible");
 });

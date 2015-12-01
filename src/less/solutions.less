@@ -12,12 +12,12 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0 auto;
 	width: 100%;
 	min-width: 1200px;
-	padding-left: 260px;
+	padding-left: 230px;
 
 	.sol-wrap-left {
 		float: left;
-		margin-left: -260px;
-		width:260px;
+		margin-left: -230px;
+		width:230px;
 	}
 
 	.sol-wrap-main {
@@ -62,7 +62,6 @@ h1,h2,h3,h4,h5,h6 {
 	background: url(../images/solutions/common/icon_1.png) no-repeat 95% -33px;
 
 	&.current {
-		background-color: #eaeaea;
 		background-position: 95% 16px;
 		color: #22a5e9;
 	}
@@ -91,17 +90,27 @@ h1,h2,h3,h4,h5,h6 {
 }
 .wrap-list  > .list-box {
 	display:none;
-	padding:10px 5px 10px 46px;
-	background:#f0f0f0;
+	padding:10px 0 10px 20px;
 }
 .wrap-list  > .list-box a {
 	display:block;
-	padding:10px 0 10px 10px;
-	background: url(../images/solutions/common/icon_2.png) no-repeat 0 18px;
+	padding:10px 0 10px 26px;
+	/* margin: 5px 0; */
+	background: url(../images/solutions/common/icon_2.png) no-repeat 16px 18px;
+
+	&:hover {
+		background-color: #eaeaea;
+		color:inherit;
+	}
 
 	&.current {
-		background-position: 0 -32px;
-		color: #22a5e9;
+		background-position: 14px -32px;
+		background-color: #fff;
+		position: relative;
+		right:-1px;
+		z-index: 1;
+		border: 1px solid #ddd;
+		border-right:0 none;
 	}
 }
 
