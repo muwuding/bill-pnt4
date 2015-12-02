@@ -580,4 +580,49 @@ a:focus {
 	}
 }
 
+ul.pagination {
+	display: inline-block;
+	padding-left: 0;
+	margin: 20px 0;
+	border-radius: 4px;
+
+	li {
+		display: inline;
+		margin: 0 2px;
+
+		a {
+		  margin-right: 5px;
+		  border-radius: 2px;
+		  background: #fff;
+		  color: #333;
+		  border-color: #ddd;
+		  border-width: 1px;
+		  border-style: solid;
+		  padding: 6px 15px;
+		}
+
+		&.active,&.active:hover {
+			a {
+				background: #2ea7e0;
+				cursor: default;
+				color: #fff;
+			}
+		}
+
+		&:hover {
+			a {
+				background: #eee;
+			}
+		}
+
+		&.disabled {
+			a {
+				color: #999;
+				background-color: #fff;
+				border-color: #ddd;
+				cursor: not-allowed;
+			}
+		}
+	}
+}
 
