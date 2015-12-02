@@ -80,6 +80,13 @@ var solutions = {
            }
        }
     }
+  },
+
+  //调整双页面选中状态
+  adjustMenuCurrent : function(str,id) {
+    if(window.location.href.indexOf(str) > -1){
+      $("#" + id).addClass("current");  
+    }
   }
 };
 
