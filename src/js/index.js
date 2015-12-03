@@ -64,6 +64,35 @@ function productSwiper() {
     });
 }
 
+//新闻标题字数
+function lengthLimit(str,n) {
+
+    if(str.length > n){
+        return str.substr(0,n) + '...';
+    }else{
+        return str;
+    }
+}
+
+//加载新闻列表
+function addNews() {
+    var newsList = PNTNEWS || [];
+    var len = newsList.length;
+    var listWrap = $("#pntNewsRow");
+    var htmls = '<div class="pnt-news-icon"></div>';
+
+    for(var i=0; i<3; i++){
+        htmls += '<div class="pnt-news-item clearfix">' +
+                    '<span></span>' +
+                    '<a href="' + newsList[i].linkUrl + '">[' + newsList[i].time.substr(5,5) + ']' + lengthLimit(newsList[i].title,17) + '</a>' +
+                 '</div>';
+    }
+
+    htmls += '<div class="pnt-news-more"><a href="news.html">更多>></a></div>';
+
+    $("#pntNewsRow").empty().append(htmls);
+}
+
 $(window).on("load", function () {
     $(".flexslider").flexslider({
         directionNav: !1,
@@ -78,4 +107,5 @@ $(window).on("load", function () {
     });
 
     productSwiper();
+    addNews();
 });
