@@ -15,11 +15,11 @@ function createNav(dir) {
                         '<ul class="subnav subnav-solution">'+
                             '<li class="default" style="margin-top:-30px;">'+
                                 '<h2 class="nav-group-title"  style="padding-top:30px;">'+
-                                    '<span class="iconfont icon-shengchanlian"></span>跨境电子商务'+
+                                    '<a href="' + dir + 'solutions/zhfw.html?page=a"><span class="iconfont icon-shengchanlian"></span>跨境电子商务</a>'+
                                 '</h2>'+
                                 '<div class="subnav-solution-content">'+
-                                    '<a href="' + dir + 'solutions/zhfw.html">跨境电商综合服务平台</a>'+
-                                    '<a href="' + dir + 'solutions/zhfw.html">跨境电商公共服务平台</a>'+
+                                    '<a href="' + dir + 'solutions/zhfw.html?page=a">跨境电商综合服务平台</a>'+
+                                    '<a href="' + dir + 'solutions/zhfw.html?page=b">跨境电商公共服务平台</a>'+
                                     '<a href="' + dir + 'solutions/hwcy.html">海外仓仓配物流</a>'+
                                     '<a href="#">B2B2C进口电商</a>'+
                                     '<a href="#">B2B2C进口物流</a>'+
@@ -28,7 +28,7 @@ function createNav(dir) {
                                 '</div>'+
                             '</li>'+
                             '<li>'+
-                                '<h2 class="nav-group-title"><span class="iconfont icon-unie63c"></span>内贸电子商务</h2>'+
+                                '<h2 class="nav-group-title"><a href="#"><span class="iconfont icon-unie63c"></span>内贸电子商务</a></h2>'+
                                 '<div class="subnav-solution-content">'+
                                     '<a href="#">电商供应链与物流</a>'+
                                     '<a href="#">电商仓仓配物流</a>'+
@@ -36,7 +36,7 @@ function createNav(dir) {
                                 '</div>'+
                             '</li>'+
                             '<li>'+
-                                '<h2 class="nav-group-title"><span class="iconfont icon-shiliangzhinengduixiang4"></span>智慧物流</h2>'+
+                                '<h2 class="nav-group-title"><a href="#"><span class="iconfont icon-shiliangzhinengduixiang4"></span>智慧物流</a></h2>'+
                                 '<div class="subnav-solution-content">'+
                                     '<a href="#">综合物流</a>'+
                                     '<a href="#">仓储配送</a>'+
@@ -47,7 +47,7 @@ function createNav(dir) {
                                 '</div>'+
                             '</li>'+
                             '<li>'+
-                                '<h2 class="nav-group-title"><span class="iconfont icon-shuziwuliu"></span>智慧园区</h2>'+
+                                '<h2 class="nav-group-title"><a href="#"><span class="iconfont icon-shuziwuliu"></span>智慧园区</a></h2>'+
                                 '<div class="subnav-solution-content">'+
                                     '<a href="#">电商产业园</a>'+
                                     '<a href="#">物流园区</a>'+
@@ -65,7 +65,7 @@ function createNav(dir) {
                         '<ul class="subnav subnav-solution">'+
                             '<li class="default" style="margin-top:-30px;">'+
                                 '<h2 class="nav-group-title"  style="padding-top:30px;">'+
-                                    '<span class="iconfont icon-gouwu"></span>电子商务商城系统'+
+                                    '<a href="#"><span class="iconfont icon-gouwu"></span>电子商务商城系统</a>'+
                                 '</h2>'+
                                 '<div class="subnav-solution-content">'+
                                     '<a href="#">电子商务商城系统总览</a>'+
@@ -76,7 +76,7 @@ function createNav(dir) {
                             '</li>'+
                             '<li>'+
                                 '<h2 class="nav-group-title">'+
-                                    '<span class="iconfont icon-gouwu"></span>电子商务运营管理系统产品套件'+
+                                    '<a href="' + dir + 'products/erp.html"><span class="iconfont icon-gouwu"></span>电子商务运营管理系统产品套件</a>'+
                                 '</h2>'+
                                 '<div class="subnav-solution-content">'+
                                     '<a href="' + dir + 'products/erp.html?map=2">电子商务运营管理系统总览</a>'+
@@ -89,7 +89,7 @@ function createNav(dir) {
                                 '</div>'+
                             '</li>'+
                             '<li>'+
-                                '<h2 class="nav-group-title"><span class="iconfont icon-shiliangzhinengduixiang4"></span>物流运营管理系统产品套件</h2>'+
+                                '<h2 class="nav-group-title"><a href="' + dir + 'products/ewms.html"><span class="iconfont icon-shiliangzhinengduixiang4"></span>物流运营管理系统产品套件</a></h2>'+
                                 '<div class="subnav-solution-content">'+
                                     '<a href="' + dir + 'products/ewms.html?map=2">物流运营管理系统总览</a>'+
                                     '<a href="' + dir + 'products/ewms.html?map=3">业务委托管理系统</a>'+
@@ -103,7 +103,7 @@ function createNav(dir) {
                                 '</div>'+
                             '</li>'+
                             '<li>'+
-                                '<h2 class="nav-group-title"><span class="iconfont icon-daibanyewu"></span>配套软硬件产品</h2>'+
+                                '<h2 class="nav-group-title"><a href="' + dir + 'products/wp918.html"><span class="iconfont icon-daibanyewu"></span>配套软硬件产品</a></h2>'+
                                 '<div class="subnav-solution-content">'+
                                     '<a href="' + dir + 'products/wp918.html">移动手持数据终端</a>'+
                                     '<a href="#">蓝牙电子称</a>'+
