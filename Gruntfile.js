@@ -57,7 +57,8 @@ module.exports = function(grunt) {
                   '!flexslider/**/*.js',
                   '!fullPage/**/*.js',
                   '!jquery/**/*.js',
-                  '!jquery-ui/**/*.js'],
+                  '!jquery-ui/**/*.js',
+                  '!config-news.js'],
             dest: 'dist/js',
             ext: '.min.js'
           }
@@ -106,7 +107,8 @@ module.exports = function(grunt) {
                   'flexslider/**/*',
                   'fullPage/**/*',
                   'jquery/**/*',
-                  'jquery-ui/**/*'],
+                  'jquery-ui/**/*',
+                  'config-news.js'],
             dest: 'dist/js'
           }
         ]
