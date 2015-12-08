@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+@imgURL: '../../images/products/common';
+
+.top-header {
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+}
+.fp-tooltip {
+	background-color: #54b9cd;
+	padding: 5px;
+	border-radius: 4px;
+}
+.header-nav {
+	position: absolute;
+	top: 30px;
+	left: 0;
+}
+
+.section {
+
+	.fixed-width {
+		position: relative;
+		width: 1200px;
+		margin: 0 auto;
+	}
+
+	h1 {
+		margin: 0;
+		margin-bottom: 20px;
+		font-size: 40px;
+		font-weight: 400;
+	}
+
+	p {
+		position: relative;
+		font-size: 18px;
+		line-height: 1.8;
+		margin: 0 auto;
+	}
+}
+
+/* 文字层 */
+.chunk-col {
+	position: absolute;
+
+	.list p {
+		padding-left: 18px;
+	}
+
+	.list p:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 14px;
+		left: 2px;
+		width: 6px;
+		height: 6px;
+		border-radius: 3px;
+	}
+}
+
+/* section1 */
+.section1-container {
+	color: #fff;
+
+	.fixed-width {
+		background: url("@{imgURL}/bg_blue_1.png") 35% 10%,
+					url("@{imgURL}/bg_blue_2.png") 20% 95%;
+		background-repeat: no-repeat;
+		height: 100%;
+	}
+
+	.chunk-col{
+
+		&.text {
+			margin-top: -60px;
+			width: 400px;
+			top: 50%;
+			left: 0;
+			text-align: left;
+		}
+
+		&.img {
+			margin-top: -190px;
+			width: 768px;
+			height: 468px;
+			top: 50%;
+			right: 0;
+		}
+
+		.list p:after {
+			background-color: #ac5a0e;
+		}
+	}
+}
+
+/* section2 */
+.section2-container {
+	color: #ac5a0e;
+
+	.fixed-width {
+		background: url("@{imgURL}/bg_orange_1.png") 65% 10%,
+								url("@{imgURL}/bg_orange_3.png") 25% 35%,
+								url("@{imgURL}/bg_orange_4.png") 35% 95%;
+		background-repeat: no-repeat;
+		height: 100%;
+	}
+
+	.chunk-col{
+
+		&.text {
+			margin-top: -20px;
+			width: 400px;
+			top: 50%;
+			right: 0;
+			text-align: left;
+		}
+
+		&.img {
+			margin-top: -160px;
+			width: 732px;
+			height: 427px;
+			top: 50%;
+			left: 0;
+		}
+
+		.list p:after {
+			background-color: #ac5a0e;
+		}
+	}
+}
+
+/* section3 */
+.section3-container {
+	color: #b5b107;
+
+	.fixed-width {
+		background: url("@{imgURL}/bg_yellow_3.png") 15% 20%,
+					url("@{imgURL}/bg_yellow_2.png") 35% 40%,
+					url("@{imgURL}/bg_yellow_1.png") 80% 60%,
+					url("@{imgURL}/bg_yellow_4.png") 60% 90%;
+		background-repeat: no-repeat;
+		height: 100%;
+	}
+
+	.chunk-col{
+
+		&.text {
+			margin-top: -110px;
+			width: 732px;
+			top: 50%;
+			left: 0;
+			text-align: left;
+		}
+
+		&.img {
+			margin-top: -130px;
+			width: 337px;
+			height: 330px;
+			top: 50%;
+			right: 0;
+		}
+
+		.list p:after {
+			background-color: #b5b107;
+		}
+	}
+}
