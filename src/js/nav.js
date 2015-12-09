@@ -69,9 +69,9 @@ function createNav(dir) {
                                 '</h2>'+
                                 '<div class="subnav-solution-content">'+
                                     '<a href="' + dir + 'products/bcs.html">电子商务商城系统总览</a>'+
-                                    '<a href="' + dir + 'products/bcs.html?map=1">B2C商城系统</a>'+
-                                    '<a href="' + dir + 'products/bcs.html?map=2">B2B2C商城系统</a>'+
-                                    '<a href="' + dir + 'products/bcs.html?map=3">B2B分销商城</a>'+
+                                    '<a href="' + dir + 'products/bcs.html?map=2">B2C商城系统</a>'+
+                                    '<a href="' + dir + 'products/bcs.html?map=3">B2B2C商城系统</a>'+
+                                    '<a href="' + dir + 'products/bcs.html?map=4">B2B分销商城</a>'+
                                 '</div>'+
                             '</li>'+
                             '<li>'+
