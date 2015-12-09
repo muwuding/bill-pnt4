@@ -65,7 +65,7 @@ function createNav(dir) {
                         '<ul class="subnav subnav-solution">'+
                             '<li class="default" style="margin-top:-30px;">'+
                                 '<h2 class="nav-group-title"  style="padding-top:30px;">'+
-                                    '<a href="#"><span class="iconfont icon-gouwu"></span>电子商务商城系统</a>'+
+                                    '<a href="' + dir + 'products/bcs.html"><span class="iconfont icon-gouwu"></span>电子商务商城系统</a>'+
                                 '</h2>'+
                                 '<div class="subnav-solution-content">'+
                                     '<a href="' + dir + 'products/bcs.html">电子商务商城系统总览</a>'+
