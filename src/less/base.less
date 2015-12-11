@@ -298,14 +298,14 @@ a:focus {
 		position: static;
 		float: left;
 		margin-right: 30px;
-		
+
 		&.logo{
 			cursor: pointer;
 
 			&:after {
 				content: none;
 			}
-			
+
 			&:hover {
 				background-color: #f7f7f7;
 			}
@@ -332,7 +332,7 @@ a:focus {
 		display: block;
 		padding: 0 15px;
 		position: relative;
-		
+
 		&:after {
 			position: absolute;
 			left: 0;
@@ -355,7 +355,7 @@ a:focus {
 		z-index: 9999;
     height: 0;
 		overflow: hidden;
-		
+
 		li {
 			float: none;
 		}
@@ -450,7 +450,7 @@ a:focus {
 		padding-left: 15px;
 		margin-left: 30px;
 		background-color: #fff;
-    
+
     a {
       display: block;
       font-size: 14px;
@@ -508,7 +508,7 @@ a:focus {
 	background: #2ea7e0;
 	color: #fff;
 	text-align: center;
-	
+
 	a {
 		color: inherit;
 	}
@@ -624,5 +624,24 @@ ul.pagination {
 			}
 		}
 	}
+}
+
+.goto-top {
+  position: fixed;
+  right: 40px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0;
+  overflow: hidden;
+  background: #ddd url(../images/icon_gototop.png) no-repeat center center;
+
+  &:hover {
+    border-color: #2ea7e0;
+    background-color: #2ea7e0;
+  }
 }
 
