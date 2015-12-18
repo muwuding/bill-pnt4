@@ -24,6 +24,15 @@ $(function(){
     $(document).on("click",".goto-top",function() {
         $("html,body").animate({scrollTop: 0}, 250);
     });
+
+    //百度统计
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?2e34f30a32566257f2cd08206678777f";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
 });
 
 $(window).scroll(function() {
@@ -35,14 +44,5 @@ $(window).scroll(function() {
     } else {
         gotoTop.hide();
     }
-
-    //百度统计
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?2e34f30a32566257f2cd08206678777f";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
 });
 
