@@ -82,10 +82,20 @@ var solutions = {
     }
   },
 
-  //调整双页面选中状态
-  adjustMenuCurrent : function(str,id) {
-    if(window.location.href.indexOf(str) > -1){
-      $("#" + id).addClass("current");  
+  //左侧菜单焦点
+  leftMenuActive : function() {
+    var as = $("#menu a");
+    var url = window.location.href;
+    var len = as.length;
+
+    for(var i=0; i<len; i++){
+      var $this = as.eq(i);
+      var href = $this.attr("href") !== "#" ? $this.attr("href") : null;
+      if(href && (url.indexOf(href)>-1)){
+        $this.addClass("current");
+        $this.parent().show();
+        $this.parent().siblings(".list-title").addClass("current");
+      }
     }
   }
 };
@@ -98,8 +108,7 @@ $(document).ready(function(){
   solutions.tabsPosition();
   solutions.tabsToggle();
   solutions.hashPosition();
-  
-
+  solutions.leftMenuActive();
 });
 
 $(window).resize(solutions.adjustWrapMargin);
