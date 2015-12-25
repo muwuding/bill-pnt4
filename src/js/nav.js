@@ -20,7 +20,7 @@ function createNav(dir) {
                                 '<div class="subnav-solution-content">'+
                                     '<a href="' + dir + '' + dir + 'solutions/zhfw.html?page=a">跨境电商综合服务平台</a>'+
                                     '<a href="' + dir + '' + dir + 'solutions/zhfw.html?page=b">跨境电商公共服务平台</a>'+
-                                    '<a href="' + dir + '' + dir + 'solutions/hwcy.html">海外仓仓配物流</a>'+
+                                    '<a href="' + dir + '' + dir + 'solutions/hwcy.html">海外仓配物流</a>'+
                                     '<a href="' + dir + 'solutions/b2b2c.html">B2B2C进口电商</a>'+
                                     '<a href="' + dir + '#">B2B2C进口物流</a>'+
                                     '<a href="' + dir + 'solutions/qcwl.html">跨境电商全程物流</a>'+
@@ -163,7 +163,7 @@ function createSolSidebar(dir) {
                     + '<div class="list-box">'
                       + '<a href="' + dir + 'zhfw.html?page=a">跨境电商综合服务平台</a>'
                       + '<a href="' + dir + 'zhfw.html?page=b">跨境电商公共服务平台</a>'
-                      + '<a href="' + dir + 'hwcy.html">海外仓仓配物流</a>'
+                      + '<a href="' + dir + 'hwcy.html">海外仓配物流</a>'
                       + '<a href="' + dir + 'b2b2c.html">B2B2C进口电商</a>'
                       + '<a href="' + dir + '#">B2B2C进口物流</a>'
                       + '<a href="' + dir + 'qcwl.html">跨境电商全程物流</a>'
