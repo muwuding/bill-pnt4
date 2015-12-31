@@ -21,10 +21,10 @@ function createNav(dir) {
                                     '<a href="' + dir + 'solutions/zhfw.html?page=a">跨境电商综合服务平台</a>'+
                                     '<a href="' + dir + 'solutions/zhfw.html?page=b">跨境电商公共服务平台</a>'+
                                     '<a href="' + dir + 'solutions/hwcy.html">海外仓配物流</a>'+
-                                    '<a href="' + dir + 'solutions/b2b2c.html">B2B2C进口电商</a>'+
-                                    '<a href="' + dir + '#">B2B2C进口物流</a>'+
+                                    '<a href="' + dir + 'solutions/b2b2c.html?page=a">B2B2C进口电商</a>'+
+                                    '<a href="' + dir + 'solutions/b2b2c.html?page=b">B2B2C进口物流</a>'+
                                     '<a href="' + dir + 'solutions/qcwl.html">跨境电商全程物流</a>'+
-                                    '<a href="' + dir + '#">跨境电商商城</a>'+
+                                    '<a href="' + dir + 'products/bcs.html?page=a">跨境电商商城</a>'+
                                 '</div>'+
                             '</li>'+
                             '<li>'+
@@ -32,7 +32,7 @@ function createNav(dir) {
                                 '<div class="subnav-solution-content">'+
                                     '<a href="' + dir + 'solutions/dsgyl.html">电商供应链与物流</a>'+
                                     '<a href="' + dir + 'solutions/dscpwl.html">电商仓配物流</a>'+
-                                    '<a href="' + dir + '#">电子商务商城</a>'+
+                                    '<a href="' + dir + 'products/bcs.html?page=b">电子商务商城</a>'+
                                 '</div>'+
                             '</li>'+
                             '<li>'+
@@ -164,10 +164,10 @@ function createSolSidebar(dir) {
                       + '<a href="' + dir + 'zhfw.html?page=a">跨境电商综合服务平台</a>'
                       + '<a href="' + dir + 'zhfw.html?page=b">跨境电商公共服务平台</a>'
                       + '<a href="' + dir + 'hwcy.html">海外仓配物流</a>'
-                      + '<a href="' + dir + 'b2b2c.html">B2B2C进口电商</a>'
-                      + '<a href="' + dir + '#">B2B2C进口物流</a>'
+                      + '<a href="' + dir + 'b2b2c.html?page=a">B2B2C进口电商</a>'
+                      + '<a href="' + dir + 'b2b2c.html?page=b">B2B2C进口物流</a>'
                       + '<a href="' + dir + 'qcwl.html">跨境电商全程物流</a>'
-                      + '<a href="' + dir + '#">跨境电商商城</a>'
+                      + '<a href="' + dir + '../products/bcs.html?page=a">跨境电商商城</a>'
                     + '</div>'
                   + '</li>'
                   + '<li class="wrap-list">'
@@ -180,7 +180,7 @@ function createSolSidebar(dir) {
                     + '<div class="list-box">'
                       + '<a href="' + dir + 'dsgyl.html">电商供应链与物流</a>'
                       + '<a href="' + dir + 'dscpwl.html">电商仓配物流</a>'
-                      + '<a href="' + dir + '#">电子商务商城</a>'
+                      + '<a href="' + dir + '../products/bcs.html?page=b">电子商务商城</a>'
                     + '</div>'
                   + '</li>'
                   + '<li class="wrap-list">'
